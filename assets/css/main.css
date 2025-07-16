@@ -3907,3 +3907,11 @@ input, select, textarea {
 			}
 
 		}
+
+.wrapper.style3.style-skills, #skills.wrapper.style3 {
+  background-color: #e3e6f6 !important;
+  color: #222 !important;
+}
+#skills.wrapper.style3 h2, #skills.wrapper.style3 ul, #skills.wrapper.style3 li, #skills.wrapper.style3 strong {
+  color: #222 !important;
+}
