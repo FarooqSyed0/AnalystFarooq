@@ -135,6 +135,16 @@
 									width: 48%;
 									margin-bottom: 2em;
 								}
+								.project-list.grid {
+									display: flex;
+									flex-wrap: wrap;
+									gap: 2em;
+									justify-content: center;
+								}
+								.project-list.grid .box.project {
+									width: 60%; /* or adjust as needed, e.g., 70% for even wider */
+									margin-bottom: 2em;
+								}
 							}
 							.project-list .button {
 								background: #7c3aed !important;
@@ -224,7 +234,7 @@
 								</section>
 							</div>
 							<!-- 2for other projects -->
-							<div class="project-list">
+							<div class="project-list grid">
 								<section class="box project" style="text-align: center; position: relative; padding-bottom: 60px;">
 									<a href="https://github.com/FarooqSyed0/CRM_Sales_Pipeline/blob/master/readme.md" target="_blank" rel="noopener" class="image-shine">
 										<img src="images/crmsales.png" alt="CRM Sales Pipeline" />
