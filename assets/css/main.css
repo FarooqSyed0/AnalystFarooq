@@ -1976,6 +1976,19 @@ input, select, textarea {
 					opacity: 0.1;
 				}
 
+.button {
+  background: #10b981 !important;
+  color: #fff !important;
+  border: 2px solid #10b981 !important;
+  border-radius: 2em !important;
+  box-shadow: none !important;
+  transition: background 0.2s, color 0.2s;
+}
+.button:hover, .button:active {
+  background: #fff !important;
+  color: #10b981 !important;
+}
+
 /* Features */
 
 	.features {
@@ -3914,4 +3927,19 @@ input, select, textarea {
 }
 #skills.wrapper.style3 h2, #skills.wrapper.style3 ul, #skills.wrapper.style3 li, #skills.wrapper.style3 strong {
   color: #222 !important;
+}
+
+.project-list .box.project img {
+  transition: 
+    transform 0.4s cubic-bezier(.4,2,.6,1), 
+    box-shadow 0.4s, 
+    filter 0.4s;
+  position: relative;
+  z-index: 1;
+}
+.project-list .box.project img:hover {
+  transform: scale(1.08) rotate(-1deg) !important;
+  box-shadow: 0 12px 36px 0 rgba(124,58,237,0.28), 0 2px 8px 0 rgba(0,0,0,0.10) !important;
+  filter: brightness(1.13) contrast(1.10) saturate(1.1) !important;
+  border-radius: 1.2em !important;
 }
