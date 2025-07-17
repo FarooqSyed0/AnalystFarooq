@@ -288,7 +288,11 @@
 							<ul class="contact" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; align-items: center; gap: 1.5em;">
 								<li>
 									<h3 style="margin-bottom: 0.3em;"><span class="icon solid fa-envelope"></span> Email</h3>
-									<a href="mailto:farooqasyed@gmail.com" style="color: #fff; text-decoration: underline;">farooqasyed [at] gmail [dot] com</a>
+									<span id="email"></span>
+									<script>
+										document.getElementById('email').innerHTML =
+											'<a href="mailto:' + 'farooqasyed' + '@' + 'gmail.com' + '">farooqasyed@gmail.com</a>';
+									</script>
 								</li>
 								<li>
 									<h3 style="margin-bottom: 0.3em;"><span class="icon solid fa-phone"></span> Phone</h3>
