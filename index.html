@@ -36,7 +36,57 @@
 					<section id="about" class="wrapper style1 fullscreen fade-up">
 						<style>
 							@media (max-width: 600px) {
-								.about-flex { flex-direction: column !important; align-items: flex-start !important; }
+								.about-flex { 
+									flex-direction: column !important; 
+									align-items: center !important; 
+									text-align: center !important;
+								}
+								.about-flex h1 {
+									font-size: 2.5em !important;
+								}
+								.about-flex h2 {
+									font-size: 1.2em !important;
+								}
+								.project-list {
+									flex-direction: column !important;
+									align-items: center !important;
+								}
+								.box.project {
+									width: 90% !important;
+									margin-bottom: 2rem !important;
+								}
+								.skills-badges {
+									justify-content: center !important;
+								}
+								.skills-badges img {
+									max-width: 120px !important;
+								}
+								.contact ul {
+									text-align: center !important;
+								}
+								.contact .icons {
+									justify-content: center !important;
+								}
+								#sidebar {
+									width: 100% !important;
+								}
+								#wrapper {
+									margin-left: 0 !important;
+								}
+							}
+							@media (max-width: 480px) {
+								.about-flex h1 {
+									font-size: 2em !important;
+								}
+								.about-flex h2 {
+									font-size: 1em !important;
+								}
+								.box.project {
+									width: 95% !important;
+								}
+								.skills-badges img {
+									max-width: 100px !important;
+								}
 							}
 						</style>
 						<div class="inner about-flex" style="display: flex; align-items: flex-start; gap: 2em; flex-wrap: wrap; justify-content: space-between;">
