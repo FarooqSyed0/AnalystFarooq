@@ -215,6 +215,11 @@
 							</div>
 							<img src="images/headshot.png" alt="Farooq Syed headshot" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; border: 2px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.06); background: #e3e6f6; padding: 4px; margin-top: 0;" />
 						</div>
+						<div style="width: 100%; text-align: center; margin-top: 2em;">
+							<a href="#projects" class="scroll-down" style="color: #fff; font-size: 2.5em; display: inline-block; transition: transform 0.2s;">
+								<span class="icon solid fa-chevron-down"></span>
+							</a>
+						</div>
 					</section>
 
 				<!-- Projects -->
@@ -269,6 +274,11 @@
 									<a href="https://github.com/FarooqSyed0/CRM_Sales_Pipeline/blob/master/src/data_cleaning.ipynb" class="button" target="_blank" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);">View Project</a>
 								</section>
 							</div>
+							<div style="width: 100%; text-align: center; margin-top: 2em;">
+								<a href="#skills" class="scroll-down" style="color: #fff; font-size: 2.5em; display: inline-block; transition: transform 0.2s;">
+									<span class="icon solid fa-chevron-down"></span>
+								</a>
+							</div>
 						</div>
 					</section>
 
@@ -301,6 +311,11 @@
 								<li><strong>Tools & Platforms:</strong> Excel, Google Data Studio, Jupyter Notebook, Anaconda Cloud, GitHub, DBeaver, IBM Cognos</li>
 								<li><strong>Analytics Focus Areas:</strong> Funnel Analysis, GTM Dashboards, KPI Tracking, Data Cleaning, Data Visualization, Interactive Dashboard Design, Data Wrangling, Data Modeling, BI Storytelling</li>
 							</ul>
+							<div style="width: 100%; text-align: center; margin-top: 2em;">
+								<a href="#contact" class="scroll-down" style="color: #fff; font-size: 2.5em; display: inline-block; transition: transform 0.2s;">
+									<span class="icon solid fa-chevron-down"></span>
+								</a>
+							</div>
 						</div>
 					</section>
 
@@ -353,6 +368,17 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				document.querySelectorAll('.scroll-down').forEach(function(link) {
+					link.addEventListener('click', function(e) {
+						e.preventDefault();
+						var target = document.querySelector(this.getAttribute('href'));
+						if (target) {
+							target.scrollIntoView({ behavior: 'smooth' });
+						}
+					});
+				});
+			</script>
 
 	</body>
 </html>
@@ -394,5 +420,15 @@
   }
   .image-shine:hover::after {
     opacity: 1;
+  }
+  .scroll-down {
+    color: #fff;
+    font-size: 2.5em;
+    display: inline-block;
+    transition: transform 0.2s, color 0.2s;
+  }
+  .scroll-down:hover {
+    color: #ffd700;
+    transform: scale(1.3);
   }
 </style>
