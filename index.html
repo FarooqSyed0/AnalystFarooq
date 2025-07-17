@@ -55,6 +55,17 @@
 									width: 90% !important;
 									margin-bottom: 2rem !important;
 								}
+								/* SQL project mobile optimization */
+								.box.project[style*=width: 700px"] {
+									width: 90% !important;
+								}
+								.box.project[style*="width: 700px"] img {
+									height: 250px !important;
+								}
+								/* Section titles mobile optimization */
+								h2[style*="font-size: 3em"] {
+									font-size: 2.2em !important;
+								}
 								.skills-badges {
 									justify-content: center !important;
 								}
@@ -73,6 +84,18 @@
 								#wrapper {
 									margin-left: 0 !important;
 								}
+								/* Improve spacing on mobile */
+								.inner {
+									padding: 2rem 1rem !important;
+								}
+								/* Better button positioning on mobile */
+								.button {
+									position: relative !important;
+									bottom: auto !important;
+									left: auto !important;
+									transform: none !important;
+									margin-top: 1rem !important;
+								}
 							}
 							@media (max-width: 480px) {
 								.about-flex h1 {
@@ -84,8 +107,21 @@
 								.box.project {
 									width: 95% !important;
 								}
+								.box.project[style*=width: 700px"] {
+									width: 95% !important;
+								}
 								.skills-badges img {
 									max-width: 100px !important;
+								}
+								h2[style*="font-size: 3em"] {
+									font-size: 1.8em !important;
+								}
+								/* Reduce image heights on very small screens */
+								.box.project img {
+									height: 200px !important;
+								}
+								.box.project[style*="width: 700px"] img {
+									height: 200px !important;
 								}
 							}
 						</style>
