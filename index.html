@@ -115,11 +115,14 @@
 									min-height: 44px;
 								}
 								.box.project .button {
-									position: static !important;
-									left: auto !important;
-									bottom: auto !important;
-									transform: none !important;
-									display: block;
+									display: flex !important;
+									align-items: center !important;
+									justify-content: center !important;
+									padding: 0.8em 1.5em !important;
+									line-height: 1.2 !important;
+									height: auto !important;
+									min-height: 44px !important;
+									font-size: 1em !important;
 									margin: 1em auto 0 auto !important;
 									width: fit-content;
 								}
@@ -285,7 +288,7 @@
 							<div class="project-list">
 								<section class="box project sql-project" style="text-align: center; position: relative; padding-bottom:60px;">
 									<a href="https://github.com/FarooqSyed0/CRM_Sales_Pipeline/blob/master/src/business_analysis_queries.sql" target="_blank" rel="noopener" class="image-shine">
-										<video src="images/sql.mp4" alt="SQL Business Analysis" style="width:100%; border-radius:2em;" autoplay loop muted playsinline webkit-playsinline preload="none"></video>
+										<video src="images/sql.mp4" alt="SQL Business Analysis" style="width:100%; border-radius:2em;" autoplay loop muted playsinline webkit-playsinline preload="auto"></video>
 									</a>
 									<h3><a href="https://github.com/FarooqSyed0/CRM_Sales_Pipeline/blob/master/src/business_analysis_queries.sql" target="_blank" rel="noopener">SQL Business Analysis</a></h3>
 									<p>SQL queries for business intelligence, sales analysis, and performance reporting.</p>
@@ -296,7 +299,7 @@
 							<div class="project-list grid">
 								<section class="box project" style="text-align: center; position: relative; padding-bottom: 60px;">
 									<a href="https://github.com/FarooqSyed0/CRM_Sales_Pipeline/blob/master/readme.md" target="_blank" rel="noopener" class="image-shine">
-										<video src="images/salespipeline.mp4" alt="CRM Sales Pipeline" style="width:90%; height:240px; border-radius:2em; object-fit:cover; display:block; margin:0 auto;" autoplay loop muted playsinline webkit-playsinline preload="none"></video>
+										<video src="images/salespipeline.mp4" alt="CRM Sales Pipeline" style="width:90%; height:240px; border-radius:2em; object-fit:cover; display:block; margin:0 auto;" autoplay loop muted playsinline webkit-playsinline preload="auto"></video>
 									</a>
 									<h3><a href="https://github.com/FarooqSyed0/CRM_Sales_Pipeline/blob/master/readme.md" target="_blank" rel="noopener">CRM Sales Pipeline</a></h3>
 									<p>Analyzes sales pipeline data to track leads and conversions for business decision-making.</p>
@@ -306,7 +309,7 @@
 								</section>
 								<section class="box project" style="text-align: center; position: relative; padding-bottom: 60px;">
 									<a href="https://github.com/FarooqSyed0/California-SaaS-Startup-Growth-Funding-Analysis/blob/master/README.md" target="_blank" rel="noopener" class="image-shine">
-										<video src="images/sfbay.mp4" alt="California SaaS Funding Analysis" style="width:90%; height:240px; border-radius:2em; object-fit:cover; display:block; margin:0 auto;" autoplay loop muted playsinline webkit-playsinline preload="none"></video>
+										<video src="images/sfbay.mp4" alt="California SaaS Funding Analysis" style="width:90%; height:240px; border-radius:2em; object-fit:cover; display:block; margin:0 auto;" autoplay loop muted playsinline webkit-playsinline preload="auto"></video>
 									</a>
 									<h3><a href="https://github.com/FarooqSyed0/California-SaaS-Startup-Growth-Funding-Analysis/blob/master/README.md" target="_blank" rel="noopener">California SaaS Funding Analysis</a></h3>
 									<p>Analyzes funding trends among California SaaS startups using real investment data.</p>
@@ -314,7 +317,7 @@
 								</section>
 								<section class="box project" style="text-align: center; position: relative; padding-bottom: 60px;">
 									<a href="https://public.tableau.com/app/profile/farooq.syed6811/vizzes" target="_blank" rel="noopener" class="image-shine">
-										<video src="images/dashboard.mp4" alt="Tableau Dashboard" style="width:90%; height:240px; border-radius:2em; object-fit:cover; display:block; margin:0 auto;" autoplay loop muted playsinline webkit-playsinline preload="none"></video>
+										<video src="images/dashboard.mp4" alt="Tableau Dashboard" style="width:90%; height:240px; border-radius:2em; object-fit:cover; display:block; margin:0 auto;" autoplay loop muted playsinline webkit-playsinline preload="auto"></video>
 									</a>
 									<h3><a href="https://public.tableau.com/app/profile/farooq.syed6811/vizzes" target="_blank" rel="noopener">Tableau Dashboards</a></h3>
 									<p>Interactive data visualizations and dashboards showcasing various analytics projects.</p>
@@ -322,7 +325,7 @@
 								</section>
 								<section class="box project" style="text-align: center; position: relative; padding-bottom: 60px;">
 									<a href="https://github.com/FarooqSyed0/CRM_Sales_Pipeline/blob/master/src/data_cleaning.ipynb" target="_blank" rel="noopener" class="image-shine">
-										<video src="images/python_clean.mp4" alt="Python Data Cleaning" style="width:90%; height:240px; border-radius:2em; object-fit:cover; display:block; margin:0 auto;" autoplay loop muted playsinline webkit-playsinline preload="none"></video>
+										<video src="images/python_clean.mp4" alt="Python Data Cleaning" style="width:90%; height:240px; border-radius:2em; object-fit:cover; display:block; margin:0 auto;" autoplay loop muted playsinline webkit-playsinline preload="auto"></video>
 									</a>
 									<h3><a href="https://github.com/FarooqSyed0/CRM_Sales_Pipeline/blob/master/src/data_cleaning.ipynb" target="_blank" rel="noopener">Python Data Cleaning</a></h3>
 									<p>Data cleaning and transformation using Python and pandas for business analytics workflows.</p>
@@ -434,6 +437,11 @@
 					});
 				});
 			</script>
+			<script>
+document.querySelectorAll('video[autoplay]').forEach(function(v) {
+  v.play().catch(function(){});
+});
+</script>
 
 	</body>
 </html>
